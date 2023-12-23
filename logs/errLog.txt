@@ -1,1 +1,5 @@
 20231221	21:25:00	08fc9fa1-81b7-4dfe-95ba-7ec6c9d5e8bd	TypeError: res.sent is not a function
+20231223	16:11:14	4dd063d7-1de7-4468-a75c-a284f3ccdab8	TypeError: Cannot read properties of undefined (reading 'map')
+20231223	16:12:17	cfab3488-1bbb-4f20-851a-5ab11341c00f	TypeError: Cannot read properties of undefined (reading 'map')
+20231223	16:14:09	40b2c78a-ea31-48f1-96be-92092e2607ca	TypeError: Cannot read properties of undefined (reading 'map')
+20231223	16:16:04	b503871e-483f-4c3a-94a6-036dd6fbe603	TypeError: Cannot read properties of undefined (reading 'map')
