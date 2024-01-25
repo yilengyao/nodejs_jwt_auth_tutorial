@@ -2,6 +2,7 @@
   "name": "nodejs_jwt_auth",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "engines": {
     "node": "18.x"
   },
@@ -21,7 +22,7 @@
     "uuid": "^9.0.1"
   },
   "scripts": {
-    "start": "node server",
+    "start": "node index.js",
     "dev": "nodemon server"
   },
   "eslintConfig": {
