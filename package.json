@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon server"
+    "dev": "nodemon index"
   },
   "eslintConfig": {
     "extends": [
