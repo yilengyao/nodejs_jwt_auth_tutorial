@@ -398,3 +398,6 @@
 20240122	22:04:17	d96533fe-fa9c-4071-9432-7f7b531521dc	PUT	undefined	/employees
 20240122	22:06:03	7f3fd285-fc98-48f5-a4c1-d9a93dbb2b48	GET	undefined	/refresh
 20240122	22:06:18	f28449de-5b5b-497d-b593-8f530d588b1f	DELETE	undefined	/employees
+20240125	16:26:07	a48a6210-6b93-4b88-81c6-d2d49f27af91	GET	undefined	/index
+20240125	16:26:07	96dc9e3b-6637-4666-9e09-59d9251ae42f	GET	undefined	/css/style.css
+20240125	16:26:07	c3e1af18-0a12-4f54-a692-344aee22ef29	GET	undefined	/favicon.ico
