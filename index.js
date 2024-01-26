@@ -29,6 +29,9 @@ app.use(express.json());
 // middleware for cookies
 app.use(cookieParser());
 
+// server static files
+app.use('/', express.static(path.join(__dirname, '/public')));
+
 // Routes
 app.use("/home", require("./routes/home"));
 
