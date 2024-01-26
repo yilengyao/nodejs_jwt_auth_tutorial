@@ -17,6 +17,9 @@ const PORT = process.env.PORT || 9001;
 // and fetch cookies credentials requirement
 app.use(credentials);
 
+// Cross Orgin Resource Sharing
+app.use(cors(corsOptions));
+
 // Middlewares
 app.use(express.json());
 
