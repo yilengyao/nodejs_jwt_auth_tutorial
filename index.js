@@ -20,7 +20,10 @@ app.use(credentials);
 // Cross Orgin Resource Sharing
 app.use(cors(corsOptions));
 
-// Middlewares
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
 app.use(express.json());
 
 // Routes
