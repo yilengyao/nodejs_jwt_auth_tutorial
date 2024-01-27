@@ -33,6 +33,7 @@ app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname, '/public')));
 
 // Routes
+app.use('/', require('./routes/root'));
 app.use("/home", require("./routes/home"));
 
 // connection
