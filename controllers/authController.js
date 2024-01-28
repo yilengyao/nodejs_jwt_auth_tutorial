@@ -1,4 +1,4 @@
-const connectDB = require('../dbConn');
+const connectDB = require('../config/dbConn');
 const User = require('../model/User');
 // const bcrypt = require('bcrypt');
 // const jwt = require('jsonwebtoken');
