@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 9001;
 
 // Handle options credentials check - before CORS!
 // and fetch cookies credentials requirement
-// app.use(credentials);
+app.use(credentials);
 
 // Cross Orgin Resource Sharing
 app.use(cors(corsOptions));
