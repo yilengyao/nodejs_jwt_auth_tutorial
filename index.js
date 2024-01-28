@@ -35,13 +35,13 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 // Routes
 app.use('/', require('./routes/root'));
 app.use("/home", require("./routes/home"));
-app.use('/register', require('./routes/register'));
+// app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
-app.use('/refresh', require('./routes/refresh'));
-app.use('/logout', require('./routes/logout'));
+// app.use('/refresh', require('./routes/refresh'));
+// app.use('/logout', require('./routes/logout'));
 
 // app.use(verifyJWT);
-app.use('/employees', require('./routes/api/employees'));
+// app.use('/employees', require('./routes/api/employees'));
 
 app.all('*', (req, res) => {
     res.status(404);
@@ -57,9 +57,9 @@ app.all('*', (req, res) => {
 app.use(errorHandler);
 
 // connection
-// app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
 
-mongoose.connection.once('open', () => {
-    console.log('Connected to MongoDB');
-    app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
-});
+// mongoose.connection.once('open', () => {
+//     // console.log('Connected to MongoDB');
+//     app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+// });
