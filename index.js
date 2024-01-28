@@ -53,3 +53,8 @@ app.use(errorHandler);
 
 // connection
 app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+
+mongoose.connection.once('open', () => {
+    console.log('Connected to MongoDB');
+    app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+});
