@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 9001;
 
 // Handle options credentials check - before CORS!
 // and fetch cookies credentials requirement
-app.use(credentials);
+// app.use(credentials);
 
 // Cross Orgin Resource Sharing
 app.use(cors(corsOptions));
@@ -57,7 +57,7 @@ app.all('*', (req, res) => {
 app.use(errorHandler);
 
 // connection
-app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+// app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
 
 mongoose.connection.once('open', () => {
     console.log('Connected to MongoDB');
