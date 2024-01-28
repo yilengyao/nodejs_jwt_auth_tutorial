@@ -8,7 +8,7 @@ const handleLogin = async (req, res) => {
 
     // check for duplicate usernames in the db
     const foundUser = await User.findOne({ username: user }).exec();
-    if (!foundUser) return res.sendStatus(401); // Unauthorized
+    if (!foundUser) return res.sendStatus(401).json({'message': `User: ${user} not found`}); // Unauthorized
     // evaluate password
     const match = await bcrypt.compare(pwd, foundUser.password);
     if(match) {
